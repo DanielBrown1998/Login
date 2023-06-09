@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) and (max-width: 1600px){
+    body{
+        background-image: linear-gradient(to top, rgb(140, 140, 140), rgb(65, 65, 65), rgba(0, 0, 0, 0.879));
+    }
+    section#login{
+        width: 60vw;
+
+    }
+    section#login>div#imagem{
+        float: right;
+        width: 40%;
+        height: 100%;
+        background-image: url('../imagens/pexels-arthur-brognoli-2346915.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right, bottom;
+        background-attachment: local;
+
+
+    }
+    section#login>div#formulario{
+        float: left;
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1600px){
+    body{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.855), rgb(80, 80, 80), rgb(179, 179, 179));
+    }
+    section#login{
+        width: 80vw;
+        max-width: 1200px;
+    }
+    section#login>div#imagem{
+        float: left;
+        width: 70%;
+        height: 100%;
+        background-image: url('../imagens/pexels-nout-gons-248159.jpg');
+    }
+    section#login>div#formulario{
+        float: right;
+        width: 30%;
+    }
+}

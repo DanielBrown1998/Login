@@ -100,7 +100,7 @@ div.campo>label{
     display: none;
 }
 div.campo>input{
-    width: calc(100%-50px);
+    width: calc(80%-50px);
     font-size: 1.0em;
     transform: translateY(12%);
     height: 80%;

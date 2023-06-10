@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Teko-Medium';
+    src: url('../fonts/Teko-Medium.ttf');
+}
+@font-face {
+    font-family: 'Teko-Regular';
+    src: url('../fonts/Teko-Regular.ttf');
+}
+:root{
+    --titulo: 'Teko-Medium';
+    --texto: 'Teko-Regular';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--texto);
+    font-size: 1em;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: dimgray; 
+    position: relative;
+}
+section#login{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section#login>div#imagem{
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url('../imagens/image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+}
+section#login>div#formulario{
+    display: block;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.622);
+    color: white;
+}
+div#formulario input[type=submit]{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+div#formulario input[type=submit]:hover{
+    cursor: pointer;
+    border-color: black;
+    background-color: white;
+    color: black;
+    transform: translate(-2%, -2%);
+    transition: transform .3s;
+}
+div#formulario>form>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+div#formulario>form>a:hover{
+    cursor: pointer;
+    border-color: black;
+    background-color: white;
+    color: black;
+    transform: translate(-2%, -2%);
+    transition: transform .3s;
+}
+h1{
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--titulo);
+    text-align: center;
+}
+div.campo{
+    position: relative;
+    margin: 5px 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+div.campo:hover{
+    cursor: pointer;
+}
+div.campo>label{
+    transform: translateY(5%);
+    margin: 2px 10px;
+    height: 100%;
+    width: 30px;
+}
+div.campo>label:hover{
+    cursor: pointer;    
+}
+div.campo>input{
+    position: absolute;
+    width: calc(100%-50px);
+    transform: translate(-10%);
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 180px;
+    border: none;
+    height: 100%;
+    margin: 0px 20px 0px 30px;
+}
+div.campo>input:hover{
+    cursor: pointer;    
+}
+div.campo>input:focus-within{
+    background-color: white;
+    color: black;
+}
